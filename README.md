@@ -2,9 +2,9 @@
 
 # 📍 Cadastro de Endereço
 
-Este projeto permite o preenchimento automático de campos de endereço com base no CEP informado pelo usuário. Utiliza a API ViaCEP para buscar as informações necessárias.
+Este projeto é composto por adicionais de um ultimo prjeto ([form-CadEndereco-](https://github.com/SarahLSilva/form-CadEndereco-.git)), no caso, foi intregado o cadastro de usuário para deixar o formuário mais completo. Como individual ele permite o preenchimento automático de campos de endereço com base no CEP informado pelo usuário. Utiliza a API ViaCEP para buscar as informações necessárias.
 
-![banner](img/form-edereco.gif)
+![banner](img/Banner1.jpeg)
 
 # 💎 Principais Funções
 
