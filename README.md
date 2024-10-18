@@ -1,8 +1,8 @@
-# form-CadEndereCOM
+# Projeto - Formulário de cadastro completo
 
 # 📍 Cadastro de Endereço
 
-Este projeto é composto por adicionais de um ultimo prjeto ([form-CadEndereco-](https://github.com/SarahLSilva/form-CadEndereco-.git)), no caso, foi intregado o cadastro de usuário para deixar o formuário mais completo. Como individual ele permite o preenchimento automático de campos de endereço com base no CEP informado pelo usuário. Utiliza a API ViaCEP para buscar as informações necessárias.
+Este projeto é composto por adicionais de um ultimo projeto ([form-CadEndereco-](https://github.com/SarahLSilva/form-CadEndereco-.git)), no caso, foi intregado o cadastro de usuário para deixar o formuário mais completo. Como individual ele permite o preenchimento automático de campos de endereço com base no CEP informado pelo usuário. Utiliza a API ViaCEP para buscar as informações necessárias.
 
 ![banner](img/Banner1.jpeg)
 
@@ -21,6 +21,7 @@ Este projeto é composto por adicionais de um ultimo prjeto ([form-CadEndereco-]
 6. ValidarCPF:
 
 7. ValidarEmail:
+
 # 🚀 Funcionalidades
 
 Cadastro com campos: Nome, email, senha, data de nascimento e CPF
@@ -31,11 +32,11 @@ Preenchimento Automático: Preenche os campos de endereço com os dados retornad
 
 Limpeza de Campos: Limpa os campos de endereço antes de realizar uma nova busca.
 
-# 🟡 Resumo-da-funcionalidade
+## 🟡 Resumo-da-funcionalidade
 
 O projeto basea-se em tornar mais pratico a realização de cadstro de endeço. Qual quando é digitado o cep preenche todo os outro campos como; bairro, cidade... mantando a padronização.
 
-# Explanção-do-codigo
+# Explanação do codigo
 
 1.  Inicio:
     > - 'use strict'; ativa um modo de programação que evita erros comuns, garantindo que o código seja mais seguro.
@@ -43,8 +44,6 @@ O projeto basea-se em tornar mais pratico a realização de cadstro de endeço. 
 2. Função limparFormulario:
 
     > Limpa os campos do formulário de endereço ao definir seus valores como vazios, utilizando getElementById.
-
-
 
 3. Validação do CEP:
 
@@ -116,10 +115,10 @@ Caso o CEP não seja encontrado ou seja inválido, uma mensagem de alerta será 
 
 >Referência para pesquisa
 
-# 👧🏻 Participantes
+# 👧🏻 Autora
 
 - Sarah
 
 # orientação
 
-- Professou leonardo (da escola marista irmão acácio)
+- [Professou leonardo](https://github.com/leonardossrocha)
