@@ -14,10 +14,53 @@ const limparFormulario = () => {
 const eNumero = (numero) => /^[0-9]+$/.test(numero); 
 const cepValido = (cep) => cep.length === 8 && eNumero(cep); 
 
-// Validação feito com o apoio do chat Gpt
+// Validação do cpf e email feito com o apoio do chat Gpt
+
 const validarEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 const validarCPF = (cpf) => {
-    return true;
+    // Remove caracteres não numéricos
+    cpf = cpf.replace(/\D/g, '');
+
+    // Verifica se o CPF tem 11 dígitos
+    if (cpf.length !== 11 || /^(\d)\1{10}$/.test(cpf)) {
+        return false; // CPF inválido
+    }
+
+    // Validação dos dígitos verificadores
+    let soma = 0;
+    let peso = 10;
+
+    // Primeiro dígito verificador
+    for (let i = 0; i < 9; i++) {
+        soma += Number(cpf[i]) * peso;
+        peso--;
+    }
+
+    let primeiroDigito = (soma * 10) % 11;
+    if (primeiroDigito === 10 || primeiroDigito === 11) {
+        primeiroDigito = 0;
+    }
+
+    if (primeiroDigito !== Number(cpf[9])) {
+        return false; // Primeiro dígito inválido
+    }
+
+    // Reseta variáveis para o segundo dígito
+    soma = 0;
+    peso = 11;
+
+    // Segundo dígito verificador
+    for (let i = 0; i < 10; i++) {
+        soma += Number(cpf[i]) * peso;
+        peso--;
+    }
+
+    let segundoDigito = (soma * 10) % 11;
+    if (segundoDigito === 10 || segundoDigito === 11) {
+        segundoDigito = 0;
+    }
+
+    return segundoDigito === Number(cpf[10]); // Retorna verdadeiro ou falso
 };
 
 // Função para preencher formulário
