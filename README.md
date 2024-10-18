@@ -104,6 +104,8 @@ Caso o CEP não seja encontrado ou seja inválido, uma mensagem de alerta será 
 
 - API ViaCEP
 
+- Com apoio do chat GPT
+
 # 📝 Fontes
 
 [ViaCEP](https://viacep.com.br/) 
