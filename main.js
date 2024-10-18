@@ -14,7 +14,7 @@ const limparFormulario = () => {
 const eNumero = (numero) => /^[0-9]+$/.test(numero); 
 const cepValido = (cep) => cep.length === 8 && eNumero(cep); 
 
-// Validações
+// Validação
 const validarEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 const validarCPF = (cpf) => {
     return true;
