@@ -18,7 +18,12 @@ Este projeto é composto por adicionais de um ultimo prjeto ([form-CadEndereco-]
 
 5. pesquisarCep(): 
 
+6. ValidarCPF:
+
+7. ValidarEmail:
 # 🚀 Funcionalidades
+
+Cadastro com campos: Nome, email, senha, data de nascimento e CPF
 
 Validação de CEP: Verifica se o CEP digitado possui 8 dígitos e é composto apenas por números.
 
@@ -63,6 +68,14 @@ O projeto basea-se em tornar mais pratico a realização de cadstro de endeço. 
 6. Escutador de Evento:
 
     > - addEventListener é usado para chamar a função pesquisarCep quando o usuário sai do campo CEP (evento focusout: O evento focusout é acionado assim que o elemento perde o foco, no caso quando o usuário sai do campo de texto).
+
+7. Validar Cpf
+
+    > Valida se o formato digitado no cpf é correto
+
+8. Validar Email
+
+    >Valida se o formato digitado no Email é correto
 
 # ✨Atributos diferencias no codigo JavaScript
 
